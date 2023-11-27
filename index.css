@@ -1,0 +1,267 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Verdana&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Verdana&family=Montserrat&display=swap'); */
+
+/* Import Roboto font weights 400, 500, and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: var(--base-background-white, #FFF);
+    box-shadow: 0px -1px 0px 0px #F1F1F1 inset;
+}
+
+header .container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .container_header h1 {
+    color: var(--gray-800, #242D35);
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px
+}
+
+header .container_header button {
+    padding: 12px 12px 12px 20px;
+    border-radius: 32px;
+    background-color: #4040F2;
+    border: none;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    cursor: pointer;
+
+}
+section.allPostss{
+    margin-top: 3rem;
+}
+
+section.allPostss .catchAllItems {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.allPostss .catchAllItems .catchItem {
+    width: 414px;
+    height: 285px;
+    background: var(--light-theme-white, #FFF);
+    box-shadow: 0px 0.33000001311302185px 0px 0px #CED5DC;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    gap: 2.5rem;
+    margin-bottom: auto;
+    /* margin: 25px; */
+}
+section.allPostss .catchAllItems .catchItem .topTitle{
+    margin-bottom: auto;
+}
+
+
+section.allPostss .catchAllItems .catchItem .topTitle h2 {
+    color: var(--light-theme-dark, #000);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+section.allPostss .catchAllItems .catchItem .topTitle span{
+    color: var(--light-theme-grey, #585C60);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.85px;
+}
+
+ section.allPostss .catchAllItems .catchItem  .middleInfo{
+    margin-bottom: auto;
+     transition: height 3s ease-in-out;
+} 
+section.allPostss .catchAllItems .catchItem  .middleInfo p{
+    color: #000;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.85px;
+    transition: max-height 3s ease-in-out;
+    overflow-y: hidden;
+    
+}
+
+section.allPostss .catchAllItems .catchItem  .middleInfo span{
+    display: none;
+    color: var(--light-theme-grey, #585C60);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.85px;
+    cursor: pointer;
+}
+section.allPostss .catchAllItems .catchItem  .middleInfo span:hover{
+    color: #2669FF;
+}
+
+
+section.allPostss .catchAllItems .catchItem .reactPost  {
+    justify-content: space-between;
+    display: flex;
+    /* margin-top: 58px; */
+}
+
+section.allPostss .catchAllItems .catchItem .reactPost .react{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+section.allPostss .catchAllItems .catchItem .reactPost .react:nth-child(1):hover{
+    color: red;
+}
+section.allPostss .catchAllItems .catchItem .reactPost .react:nth-child(2):hover{
+    color: #2669FF;
+}
+section.allPostss .catchAllItems .catchItem .reactPost .react:nth-child(3):hover{
+    color: green;
+}
+
+
+.ovarley {
+    position: fixed;
+    display: none;
+    filter: blur(175px);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  } 
+
+.modul{
+   
+   
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #fff;
+    padding: 20px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    z-index: 1001;
+  
+}
+
+.modul .mainCard{
+    width: 658px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #F4F4F4;
+    padding: 30px;
+}
+
+.modul .mainCard form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modul .mainCard form label{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03px;
+    padding-top: 22px;
+}
+
+.modul .mainCard form .newTitle{
+    border: none;
+    background: #F4F4F4;
+    backdrop-filter: blur(2px);
+    outline: none;
+    border-bottom: 1px solid #9492A0;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+
+.modul .mainCard form  textarea{
+    margin-top: 1rem;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #9492A0;
+    background: #F4F4F4;
+    backdrop-filter: blur(2px);
+}
+
+.modul .mainCard form  .catchInput{
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    gap: 8px;
+}
+
+.modul .mainCard form  .catchInput input{
+    border-radius: 4px;
+    color: #FFF;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.modul .mainCard form  .catchInput input:nth-child(1){
+    background-color: #383748;
+}
+.modul .mainCard form  .catchInput input:nth-child(2){
+    background-color: #2669FF;
+}
+.liked {
+    color: red;
+}
+.active{
+    color: red;
+}
+.expanded{
+    max-height: inherit;
+}
